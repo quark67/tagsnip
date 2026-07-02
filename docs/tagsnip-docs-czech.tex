@@ -62,7 +62,7 @@ lualatex --shell-escape docs/tagsnip-docs-czech.tex
 
 \section*{tagsnip}
 
-\textit{tagsnip} je La\TeX{}ový balíček pro vkládání označených úryvků kódu z lokálních souborů 
+\textit{tagsnip} je \LaTeX{}ový balíček pro vkládání označených úryvků kódu z lokálních souborů 
 nebo vzdálených repozitářů dostupných přes webové odkazy. 
 Extrahuje označené části kódu a sází je jednotným stylem, 
 čímž podporuje reprodukovatelnou a udržitelnou dokumentaci.
@@ -132,7 +132,7 @@ Výsledkem tohoto příkazu je Úryvek 3:
 \subsection*{Architektura}
 
 \textit{tagsnip} se skládá ze dvou hlavních částí,
-La\TeX{}ového frontend balíčku a externí backend utility napsané v~Pythonu.
+\LaTeX{}ového frontend balíčku a externí backend utility napsané v~Pythonu.
 Frontend definuje příkaz \textbackslash{}IncludeCode a zajišťuje sazbu výsledných úryvků pomocí balíčku Minted.
 Backend je zodpovědný za přístup ke zdrojovým souborům, vyhledávání označených úseků a jejich extrakci do dočasných souborů.
 Při překladu dokumentu frontend pomocí shell escape spustí backend utilitu,
@@ -157,7 +157,7 @@ a pro načítání vzdálených souborů přes HTTP knihovnu \textit{requests}.
 \subsection*{Omezení}
 
 \begin{itemize}
-    \item \textit{tagsnip} vyžaduje překladač LuaLa\TeX{}.
+    \item \textit{tagsnip} vyžaduje překladač Lua\LaTeX{}.
     
     \item Při kompilaci dokumentu musí být povolen shell escape
     pomocí přepínače \textit{--shell-escape}.
